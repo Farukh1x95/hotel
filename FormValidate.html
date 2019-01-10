@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ADD NEW HOTEL FORM</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body style="background-color: azure">
+    <div class="form-fill">
+
+        <div class="look">
+            <h2>Add New Hotel...</h2>
+            <form name="dalo-ab" onsubmit="return Form()">
+                <fieldset>
+                    <legend>Submission About your Hotel</legend>
+
+                    <p>Hotel Name </p>
+                    <input type="text" name="HotelName" placeholder="Name">
+                    <p id="val1"></p>
+                    <p>Hotel Location</p>
+                    <input type="text" name="HotelAddress" placeholder="Location ">
+                    <p id="val2"></p>
+                    <p>Address </p>
+                    <textarea name="message" rows="10" cols="120"></textarea>
+                    <p id="val3"></p>
+                    <input type="file" value="upload Image" id="form-button">
+
+
+                    <input type="submit" value="submit" id="form-button">
+                    <br>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script>
+        function Form() {
+
+            var HotelName = document.forms["dalo-ab"]["HotelName"].value;
+            if (HotelName === "") {
+                document.getElementById("val1").innerHTML = "*Field Required";
+                document.getElementById("val1").classList.add('validation');
+                return false;
+            }
+
+            var HotelAddress = document.forms["dalo-ab"]["HotelAddress"].value;
+            if (HotelAddress === "") {
+                document.getElementById("val2").innerHTML = "*Field Required";
+                document.getElementById("val2").classList.add('validation');
+                return false;
+            }
+
+            var message = document.forms["dalo-ab"]["message"].value;
+            if (message === "") {
+                document.getElementById("val3").innerHTML = "*Field Required";
+                document.getElementById("val3").classList.add('validation');
+                return false;
+            }
+
+
+            // if (x === "") {
+
+            //     document.getElementById("val1").innerHTML = "Fill Required";
+            //     return false;
+
+            //     var x = document.forms["dalo-ab"]["HotelAddress"].value;
+            //     if (x === "") {
+
+            //         document.getElementById("val1").innerHTML = "Fill Required";
+            //         return false;
+
+            //         var x = document.forms["dalo-ab"]["message"].value;
+            //         if (x === "") {
+
+            //             document.getElementById("val1").innerHTML = "Fill Required";
+            //             return false;
+            //         }   
+            //     }
+            // }
+        }
+
+    </script>
+
+
+</body>
+
+</html>
