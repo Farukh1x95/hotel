@@ -3,7 +3,7 @@
  $firstname = $_POST['firstname'];
  $lastname = $_POST['lastname'];
      
-echo ("HEllo .$firstname");
+echo ("Hello .$firstname");
  echo ("Hello.$lastname");
  }
 

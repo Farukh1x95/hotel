@@ -6,5 +6,4 @@ if (!$conn){
     echo ("Connection is not working");
 }
 
-
 ?>

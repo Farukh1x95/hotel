@@ -23,7 +23,8 @@
             Price: <input type="text" name="price"> <br>
             <input type="submit" name="Submit">
         </form>
-    </div>
+    </div><?php include $_SERVER["DOCUMENT_ROOT"]."/jsonadd.html";?>
+
 
 
 
