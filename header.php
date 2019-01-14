@@ -8,10 +8,14 @@
     <title>HOTELS</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 
 <body>
-
+<style>
+    font-family: 'Quicksand', sans-serif;
+</style>
     <div class="navbar navbar-dark navbar-nav bg-dark">
 
         <div class="container d-flex  flex-row justify-content-between"></div>
@@ -22,8 +26,8 @@
             </div>
 
             <div class="pg-2  justify-content-end ">
-                <a name="" id="" class="btn btn-primary" href="INDEX.php" role="button">Home</a>
-                <a name="" id="" class="btn btn-primary" href="#" role="button">booking</a>
+                <a name="" id="" class="btn btn-dark" href="INDEX.php" role="button">Home</a> |
+                <a name="" id="" class="btn btn-dark" href="#" role="button">booking</a>
 
             </div>
 
