@@ -1,9 +1,10 @@
 <?php
 include("connection.php");
+include("header.php");
 $sql = "SELECT * FROM user";
 $result = mysqli_query($conn,$sql);
 $data =  mysqli_fetch_assoc($result);
-//print_r($data);
+print_r($data);
   $user =  $data["username"];
   $pwrd =  $data["password"];
 
@@ -16,6 +17,7 @@ if(isset($_POST['login'] )) {
     header("location: index.php");  
 } else {
     header("login.php");
-    echo '<a href="login.php">Login Again</a>';
+    echo '<button class="btn btn-primary"><a style="color:white;" href="login.php">Login Again</a></button>'; 
+    echo '<button class="btn btn-primary"><a style="color:white;" href="logout.php">Log out</a></button>';
 }
 ?>

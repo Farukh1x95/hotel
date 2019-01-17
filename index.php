@@ -22,6 +22,10 @@ $result = mysqli_query($conn,$sql);
             padding: 20px;
         }
 
+        a {
+            text-decoration: none;
+        }
+
     </style>
     <div class="jumbotron d-inline-flex flex-wrap">
         <?php
@@ -45,4 +49,3 @@ foreach($result as $row){
 </body>
 
 </html>
-

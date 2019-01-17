@@ -20,11 +20,13 @@
             font-family: 'Open Sans', sans-serif;
         }
 
+        a {
+            text-decoration: none;
+        }
+
     </style>
     <header>
         <div class="navbar navbar-dark navbar-nav bg-dark">
-
-            <div class="container d-flex  flex-row justify-content-between"></div>
 
             <div class="container d-flex flex-row text-light  justify-content-between">
                 <div class="pg-2 d-flex justify-content-start">
@@ -35,7 +37,7 @@
                     <a name="" id="" class="btn btn-dark" href="INDEX.php" role="button">Home</a>
                     <a name="" id="" class="btn btn-dark" href="#" role="button">booking</a>
                     <a name="" id="" class="btn btn-dark" href="login.php" role="button"><i class="far fa-user"></i>
-                        <?php echo session_status();  ?> </a>
+                        <?php  ?> </a>
                 </div>
             </div>
         </div>

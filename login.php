@@ -1,44 +1,35 @@
 <?php
 include("header.php"); 
 ?>
-
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 
 <body>
     <style>
 
     </style>
-    <div class="container" style="padding: 10px; border: 1px solid #242424; border-radius: 8px; margin-top: 50px">
-        <div class="col-lg-4"></div>
-        <div class="col-lg-4">
-            <div class="jumbotron">
-                <form name="UserAuth" onsubmit="return Form()" action="validation.php" method="post">
-                    <div class="form=group">
-                        <label for="inputName"><strong>Username</strong></label>
-                        <input type="text" class="form-control col-sm-4 is-valid" name="username" id="inputName" placeholder="E.g. - Farukh">
-                        <div class="hint1"></div> <br>
-                    </div>
-
-                    <div class="form-group">
-                        <label for=""><Strong>Password</Strong></label>
-                        <input type="password" class="form-control col-sm-4" name="password" id="Pswd" placeholder="*******">
-                        <div class="hint2"></div> <br>
-                    </div>
-                    <button type="submit" name="login" class="btn btn-primary">Log In </button>
-
-                    <a href="newuser.php"><button type="button" name="login" class="btn btn-primary">Sign Up</button></a>
-                </form>
-            </div>
+    <div class="jumbotron">
+        <div class="container">
+            <form name="UserAuth" action="validation.php" method="post" onsubmit="return Form()">
+                <div class="form-group">
+                    <label for="#">Username</label>
+                    <input type="username" class="form-control" id="inputName" placeholder="E.g. - Farukh">
+                    <p id="hint1"></p>
+                </div>
+                <div class="form-group">
+                    <label for="#">Password</label>
+                    <input type="password" class="form-control" id="Pswd" placeholder="Password">
+                </div>
+                <button type="submit" name="login" class="btn btn-primary">Login</button>
+            </form>
         </div>
-        <div class="col-lg-4"></div>
     </div>
-
-    <script>
+    <!--    <script>
         function Form() {
 
             var inputName = document.forms["UserAuth"]["inputName"].value;
@@ -61,7 +52,7 @@ include("header.php");
 
         }
 
-    </script>
+    </script> -->
 </body>
 
 </html>
