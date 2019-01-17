@@ -19,18 +19,16 @@ $id =  $_GET['id'];
 
 <body>
     <style>
-        
         #view {
-          
+
             border: 1px solid #4a4640;
             background-color: rgba(0, 0, 0, 0.6);
-            padding : 50px;
-        
+            padding: 50px;
         }
 
     </style>
-   
- <?php
+
+    <?php
 
     $row =  mysqli_fetch_assoc($result);
         foreach ($result as $row){
