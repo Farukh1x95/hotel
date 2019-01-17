@@ -1,5 +1,4 @@
 <?php
- session_start();
 include("header.php");
 include("connection.php");
 $sql = "SELECT * FROM hoteltable";
@@ -49,3 +48,6 @@ foreach($result as $row){
 </body>
 
 </html>
+<?php
+include("footer.php");
+?>

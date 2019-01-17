@@ -16,16 +16,17 @@ include("header.php");
     <div class="jumbotron">
         <div class="container">
             <form name="UserAuth" action="validation.php" method="post" onsubmit="return Form()">
-                <div class="form-group">
+                <div class="form-group col-md-6">
                     <label for="#">Username</label>
                     <input type="username" class="form-control" id="inputName" placeholder="E.g. - Farukh">
                     <p id="hint1"></p>
                 </div>
-                <div class="form-group">
+                <div class="form-group col-md-6">
                     <label for="#">Password</label>
                     <input type="password" class="form-control" id="Pswd" placeholder="Password">
                 </div>
                 <button type="submit" name="login" class="btn btn-primary">Login</button>
+                <button class="btn btn-primary"><a style="color:white;" href="add-hotel.php">Sign Up</a></button>
             </form>
         </div>
     </div>

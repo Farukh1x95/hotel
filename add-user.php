@@ -13,7 +13,6 @@ if(!$result)
 ?>
 <!doctype html>
 <html>
-
 <body>
     <div class="containter">
         <form>

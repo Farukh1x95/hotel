@@ -16,9 +16,7 @@
             bottom: 0px;
             position: absolute;
         }
-
     </style>
-
     <footer>
         <div class="containter d-flex bg-dark align-item-end ">
             <div class="text-light container d-inline-flex flex-column justify-content-center">

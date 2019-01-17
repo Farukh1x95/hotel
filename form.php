@@ -1,6 +1,5 @@
     <?php
     include_once("connection.php");
-
     
     $hotel = $_POST["hotel"];
     $phone = $_POST["phone"];
