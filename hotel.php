@@ -6,6 +6,7 @@ include("connection.php");
 $sql = "SELECT * FROM hoteltable WHERE id = '".($id)."' ";
 $result = mysqli_query($conn,$sql);
 $id =  $_GET['id'];
+echo $id;
 ?>
 <!DOCTYPE html>
 <html lang="en">

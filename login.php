@@ -27,7 +27,7 @@ include("header.php");
     <div class="jumbotron">
         <div class="container">
             <form name="UserAuth" action="validation.php" method="post" onsubmit="return Form()">
-                <div class="setting">
+                <div class="setting text-center">
                     <div class="form-group col-md-6">
                         <label for="#">Username</label>
                         <input type="text" class="form-control" name="username" id="inputName" placeholder="E.g. - Farukh">
@@ -39,7 +39,7 @@ include("header.php");
                     </div>
                     <div class="button-set">
                         <button name="login" class="btn btn-primary">Login</button>
-                        <button class="btn btn-primary"><a style="color:white;" href="add-hotel.php">Sign Up</a></button>
+                        <button class="btn btn-primary"><a style="color:white;" href="add-user.php">Sign Up</a></button>
                     </div>
                 </div>
             </form>
