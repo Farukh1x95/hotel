@@ -10,9 +10,9 @@ $data =  mysqli_fetch_assoc($result);
 if(isset($_POST['login'] )) {
     $username = $_POST['username'];
     $password = $_POST['password'];
-} if( $username == $user && $password == $pwrd ) {
+} if( $username === $user && $password === $pwrd ) {
     setcookie('username', $username, time() + (86400 * 30) ); //for One Day
-    echo session_status();
+    session_status();
     header("location: index.php");  
 } else {
     header("login.php");

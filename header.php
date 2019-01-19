@@ -37,7 +37,7 @@
                     <a name="" id="" class="btn btn-dark" href="INDEX.php" role="button">Home</a>
                     <a name="" id="" class="btn btn-dark" href="#" role="button">booking</a>
                     <a name="" id="" class="btn btn-dark" href="login.php" role="button"><i class="far fa-user"></i>
-                        <?php  ?> </a>
+                        <?php ?> </a>
                 </div>
             </div>
         </div>
