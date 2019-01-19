@@ -11,22 +11,37 @@ include("header.php");
 
 <body>
     <style>
-
+        .setting{
+            margin: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 20px;
+            
+        }
+        .button-set{
+            align-items: center;
+        }
     </style>
     <div class="jumbotron">
         <div class="container">
             <form name="UserAuth" action="validation.php" method="post" onsubmit="return Form()">
-                <div class="form-group col-md-6">
-                    <label for="#">Username</label>
-                    <input type="username" class="form-control" id="inputName" placeholder="E.g. - Farukh">
-                    <p id="hint1"></p>
+                <div class="setting">
+                    <div class="form-group col-md-6">
+                        <label for="#">Username</label>
+                        <input type="text" class="form-control" name="username" id="inputName" placeholder="E.g. - Farukh">
+                        <p id="hint1"></p>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="#">Password</label>
+                        <input type="text" class="form-control" name="password" id="Pswd" placeholder="Password">
+                    </div>
+                    <div class="button-set">
+                        <button name="login" class="btn btn-primary">Login</button>
+                        <button class="btn btn-primary"><a style="color:white;" href="add-hotel.php">Sign Up</a></button>
+                    </div>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="#">Password</label>
-                    <input type="password" class="form-control" id="Pswd" placeholder="Password">
-                </div>
-                <button type="submit" name="login" class="btn btn-primary">Login</button>
-                <button class="btn btn-primary"><a style="color:white;" href="add-hotel.php">Sign Up</a></button>
             </form>
         </div>
     </div>

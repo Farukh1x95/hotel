@@ -4,10 +4,9 @@ include("header.php");
 $sql = "SELECT * FROM user";
 $result = mysqli_query($conn,$sql);
 $data =  mysqli_fetch_assoc($result);
-print_r($data);
+//print_r($data);
   $user =  $data["username"];
   $pwrd =  $data["password"];
-
 if(isset($_POST['login'] )) {
     $username = $_POST['username'];
     $password = $_POST['password'];
