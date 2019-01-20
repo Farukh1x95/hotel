@@ -3,6 +3,7 @@ include("header.php");
 include("connection.php");
 $sql = "SELECT * FROM hoteltable";
 $result = mysqli_query($conn,$sql);
+session_start();
 ?>
 <!DOCTYPE html>
 

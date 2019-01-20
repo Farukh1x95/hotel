@@ -7,9 +7,13 @@ echo ("Hello .$firstname");
  echo ("Hello.$lastname");
  }
 
+//Get Cookie Value
+ if( isset($_COOKIE['$user']))
+            echo "Welcome " . $_COOKIE['$user'] . "<br />";
+         
+         else
+            echo "Sorry... Not recognized" . "<br />"
 ?>
-
-<!DOCTYPE html>
 <html>
 
 <head>

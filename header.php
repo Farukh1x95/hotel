@@ -30,14 +30,17 @@
 
             <div class="container d-flex flex-row text-light  justify-content-between">
                 <div class="pg-2 d-flex justify-content-start">
-                    <h1><i class="fas fa-h-square"></i>OTELS</h1>
+                    <a href="INDEX.php" class="btn btn-dark">
+                        <h1><i class="fas fa-h-square"></i>OTELS</h1>
+                    </a>
                 </div>
 
                 <div class="pg-2  justify-content-end ">
                     <a name="" id="" class="btn btn-dark" href="INDEX.php" role="button">Home</a>
                     <a name="" id="" class="btn btn-dark" href="#" role="button">booking</a>
                     <a name="" id="" class="btn btn-dark" href="login.php" role="button"><i class="far fa-user"></i>
-                        <?php ?> </a>
+                        <?php  ?> </a>
+                    <a href="logout.php" class="btn btn-dark"><i class="fas fa-sign-out-alt"></i></a>
                 </div>
             </div>
         </div>

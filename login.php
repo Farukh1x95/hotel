@@ -1,5 +1,7 @@
-<?php
-include("header.php"); 
+<?php 
+include("header.php");
+include("connection.php");
+session_start();
 ?>
 <html lang="en">
 
@@ -13,31 +15,35 @@ include("header.php");
     <style>
         .setting{
             margin: 10px;
-            display: flex;
-            flex-wrap: wrap;
             border: 1px solid black;
             border-radius: 8px;
             padding: 20px;
+            
+            align-items: center;
             
         }
         .button-set{
             align-items: center;
         }
+        #usr{
+margin-left: 300px;
+            margin-right: 300px;
+        }
     </style>
     <div class="jumbotron">
-        <div class="container">
+        <div class="container" id="usr">
             <form name="UserAuth" action="validation.php" method="post" onsubmit="return Form()">
-                <div class="setting text-center">
-                    <div class="form-group col-md-6">
-                        <label for="#">Username</label>
+                <div class=" setting text-center">
+                    <div class="form-group col-lg-4">
+                        <label for="#"><b>Username</b></label>
                         <input type="text" class="form-control" name="username" id="inputName" placeholder="E.g. - Farukh">
                         <p id="hint1"></p>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="#">Password</label>
+                    <div class="form-group col-lg-4">
+                        <label for="#"><b>Password</b></label>
                         <input type="text" class="form-control" name="password" id="Pswd" placeholder="Password">
                     </div>
-                    <div class="button-set">
+                    <div class="col-lg-4 ">
                         <button name="login" class="btn btn-primary">Login</button>
                         <button class="btn btn-primary"><a style="color:white;" href="add-user.php">Sign Up</a></button>
                     </div>
@@ -45,7 +51,7 @@ include("header.php");
             </form>
         </div>
     </div>
-    <!--    <script>
+    <script>
         function Form() {
 
             var inputName = document.forms["UserAuth"]["inputName"].value;
@@ -68,7 +74,7 @@ include("header.php");
 
         }
 
-    </script> -->
+    </script>
 </body>
 
 </html>
