@@ -13,9 +13,10 @@
 <body>
     <style>
         .footer {
-            bottom: 0px;
-            position: absolute;
+            bottom: 0;
+            position: fixed;
         }
+
     </style>
     <footer>
         <div class="containter d-flex bg-dark align-item-end ">

@@ -1,9 +1,8 @@
 <?php
- if(isset($_POST['submit'])){
+ if(isset($_POST['login'])){
  $firstname = $_POST['firstname'];
- $lastname = $_POST['lastname'];
-     
-echo ("Hello .$firstname");
+ $lastname = $_POST['lastname'];   
+echo ("Hello .$firstname <br>"); 
  echo ("Hello.$lastname");
  }
 
@@ -23,9 +22,6 @@ echo ("Hello .$firstname");
 </head>
 
 <body>
-    <style>
-
-    </style>
 
     <div class="container" style="margin:200px">
         <form action="learn.php" method="post">
@@ -37,7 +33,7 @@ echo ("Hello .$firstname");
                 <label>Last Name</label>
                 <input type="text" name="lastname">
             </div>
-            <input class="btn btn-primary" type="submit" name="submit">
+            <input class="btn btn-primary" type="submit" name="login">
         </form>
     </div>
 </body>
