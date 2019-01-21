@@ -41,7 +41,12 @@
                         session_start();
                         if(isset($_SESSION['$username'])){ 
                             echo $_SESSION['$username'] ; } ?> </a>
-                    <a href="logout.php" class="btn btn-dark"><i class="fas fa-sign-out-alt"></i></a>
+                    <?php
+                    if(isset($_SESSION['$username'])){
+                      echo  '<a href="logout.php" class="btn btn-dark"><i class="fas fa-sign-out-alt"></i></a>' ;
+                    }
+                    
+                        ?>
                 </div>
             </div>
         </div>
