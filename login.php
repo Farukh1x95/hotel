@@ -32,24 +32,24 @@ if (isset($_SESSION['$username'])){
             align-items: center;
         }
         #usr{
-margin-left: 300px;
-            margin-right: 300px;
+            padding-left: 300px;
+            padding-right:  300px;
         }
     </style>
     <div class="jumbotron">
         <div class="container" id="usr">
             <form name="UserAuth" action="validation.php" method="post" onsubmit="return Form()">
                 <div class=" setting text-center">
-                    <div class="form-group col-lg-4">
+                    <div class="form-group ">
                         <label for="#"><b>Username</b></label>
                         <input type="text" class="form-control" name="username" id="inputName" placeholder="E.g. - Farukh">
                         <p id="hint1"></p>
                     </div>
-                    <div class="form-group col-lg-4">
+                    <div class="form-group">
                         <label for="#"><b>Password</b></label>
                         <input type="text" class="form-control" name="password" id="Pswd" placeholder="Password">
                     </div>
-                    <div class="col-lg-4 ">
+                    <div class=" ">
                         <button name="login" class="btn btn-primary">Login</button>
                         <button class="btn btn-primary"><a style="color:white;" href="add-user.php">Sign Up</a></button>
                     </div>
