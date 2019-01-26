@@ -1,5 +1,7 @@
 <?php
 include("header.php");
+$json = file_get_contents("data.json");
+$data = json_decode($json,true);
 ?>
 <html lang="en">
 
@@ -18,31 +20,32 @@ include("header.php");
         }
 
     </style>
-
-    <table class="table table-dark table-bordered  align-item-center d-flex flex-wrap">
-        <tr>
-            <th>HOTEL</th>
-            <th>PHONE</th>
-            <th>LOCATION</th>
-            <th>ADDRESS</th>
-            <th>PRICE</th>
-        </tr>
-        <?php
-  $json = file_get_contents("data.json");
-  $data = json_decode($json,true);
-  foreach ($data as $row) {
-        
+    <div class="jumbotron">
+        <table class="table table-dark table-bordered  align-item-center d-flex">
+            <thead>
+                <tr>
+                    <th>HOTEL</th>
+                    <th>PHONE</th>
+                    <th>LOCATION</th>
+                    <th>ADDRESS</th>
+                    <th>PRICE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+  foreach ($data as $row) {  
     echo '<tr>
-         <td>'.$row["name"].'</td>
-         <td>'.$row["phone"].'</td>
-         <td>'.$row["location"].'</td>
-         <td>'.$row["address"].'</td>
+         <td>'.$row["name"].'</td> 
+         <td>'.$row["phone"].'</td> 
+         <td>'.$row["location"].'</td> 
+         <td>'.$row["address"].'</td> 
          <td>'.$row["price"].'</td>   
-         </tr>
-      ' ;
+         </tr>' ;
   };
   ?>
-    </table>
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>

@@ -1,3 +1,6 @@
+<?php
+include("connection.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,9 +25,17 @@
             text-decoration: none;
         }
 
+        .jumbotron {
+            margin-bottom: 0px;
+        }
+
+        header {
+            margin-bottom: 50px;
+        }
+
     </style>
     <header>
-        <div class="navbar navbar-dark navbar-nav bg-dark">
+        <div class="navbar navbar-dark navbar-nav bg-dark fixed-top">
 
             <div class="container d-flex flex-row text-light  justify-content-between">
                 <div class="pg-2 d-flex justify-content-start">
@@ -34,19 +45,27 @@
                 </div>
 
                 <div class="pg-2  justify-content-end ">
-                    <a name="" id="" class="btn btn-dark" href="INDEX.php" role="button">Home</a>
-                    <a name="" id="" class="btn btn-dark" href="#" role="button">booking</a>
-                    <a name="" id="" class="btn btn-dark" href="login.php" role="button"><i class="far fa-user"></i>
-                        <?php 
-                        session_start();
-                        if(isset($_SESSION['$username'])){ 
-                            echo $_SESSION['$username'] ; } ?> </a>
+                    <a name="" id="" class="btn btn-dark" href="INDEX.php" role="button"><i class="fas fa-home"></i> </a>
                     <?php
-                    if(isset($_SESSION['$username'])){
-                      echo  '<a href="logout.php" class="btn btn-dark"><i class="fas fa-sign-out-alt"></i></a>' ;
+                    $draftno = "Select COUNT(book_id) as total FROM draft";
+                    $result = mysqli_query($conn, $draftno);
+                     session_start();
+                    if(isset($_SESSION['username'])){
+                      echo  '<a href="draft.php" class="btn btn-dark"><i class="fas fa-box-open"></i> draft</a> ' ; ('.$result.');
+                        echo '<a href="showbooking.php" class="btn btn-dark"><i class="fas fa-box-open"></i> Booking</a>';
                     }
-                    
-                        ?>
+                    ?>
+                    <a href="login.php" name="" id="" class="btn btn-dark" role="button"><i class="far fa-user"></i>
+                        <?php 
+                        if(isset($_SESSION['username'])){ 
+                            echo $_SESSION['username'] ; }
+                        ?> </a>
+                    <?php
+                    if(isset($_SESSION['username'])){
+                    echo '<a href="logout.php" class="btn btn-dark"><i class="fas fa-sign-out-alt"></i></a>' ;
+                    }
+
+                    ?>
                 </div>
             </div>
         </div>

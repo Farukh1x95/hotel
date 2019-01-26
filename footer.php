@@ -12,14 +12,15 @@
 
 <body>
     <style>
-        .footer {
+        #footer {
+            position: sticky;
             bottom: 0;
-            position: fixed;
+            width: 100%;
         }
 
     </style>
     <footer>
-        <div class="containter d-flex bg-dark align-item-end ">
+        <div class="containter d-flex bg-dark align-item-end " id="footer">
             <div class="text-light container d-inline-flex flex-column justify-content-center">
 
                 <div class="p-2  text-center container">

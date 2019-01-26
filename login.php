@@ -1,13 +1,10 @@
 <?php 
 include("connection.php");
 include("header.php");
-//session_start();
-if (isset($_SESSION['$username'])){
-    header("location: INDEX.php");
-} else {
-   '<pre>' . print_r($_SESSION) . '</pre>';
-} 
 
+if (isset($_COOKIE['$username'])){
+header("location: INDEX.php");
+}
 ?>
 <html lang="en">
 
@@ -24,37 +21,42 @@ if (isset($_SESSION['$username'])){
             border: 1px solid black;
             border-radius: 8px;
             padding: 20px;
-            
+            text-align-last: center;
             align-items: center;
             
         }
         .button-set{
+            margin: 10px;
+            padding: 20px;
+            text-align-last: center;
             align-items: center;
         }
         #usr{
-            padding-left: 300px;
-            padding-right:  300px;
+           
         }
     </style>
     <div class="jumbotron">
-        <div class="container" id="usr">
-            <form name="UserAuth" action="validation.php" method="post" onsubmit="return Form()">
-                <div class=" setting text-center">
+        <div class="container col-md-4" id="usr">
+
+            <div class=" setting text-center">
+                <form name="UserAuth" action="validation.php" method="post" onsubmit="return Form()">
                     <div class="form-group ">
                         <label for="#"><b>Username</b></label>
-                        <input type="text" class="form-control" name="username" id="inputName" placeholder="E.g. - Farukh">
+                        <input type="text" class="form-control" name="username" id="inputName" placeholder="E.g. - Farukh" required>
                         <p id="hint1"></p>
                     </div>
                     <div class="form-group">
                         <label for="#"><b>Password</b></label>
-                        <input type="text" class="form-control" name="password" id="Pswd" placeholder="Password">
+                        <input type="text" class="form-control" name="password" id="Pswd" placeholder="Password" required>
                     </div>
-                    <div class=" ">
-                        <button name="login" class="btn btn-primary">Login</button>
-                        <button class="btn btn-primary"><a style="color:white;" href="add-user.php">Sign Up</a></button>
-                    </div>
-                </div>
-            </form>
+                    <button name="login" class="btn btn-primary">Login</button>
+                </form>
+
+            </div>
+            <div class="button-set text-center">
+
+                <a style="color:white;" href="add-user.php"><button class="btn btn-primary">Sign Up</button></a>
+            </div>
         </div>
     </div>
     <script>

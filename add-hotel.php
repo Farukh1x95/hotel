@@ -11,7 +11,7 @@ if(isset($_POST["submit"])){
     $result = mysqli_query($conn,$sql);
     if(!$result) 
     { die('Error : Query Not Executed. Please Fix the Issue! ' . mysql_error()); } else 
-    { echo "Data Inserted Successully!!!"; }
+    { header("INDEX.php"); }
 }
     
 ?>
