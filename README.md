@@ -1,5 +1,6 @@
 #Hotel Booking and Recommendation System
 Features:-
+
 1.	It inputs a json file with predefined data fields and feed them into the database.
 2.	Users can book a hotel in this application. But first they have to sign up or login to make a booking.
 3.	Users can also save the incomplete booking of Hotel and see them in their Draft space and complete thie booking process.
@@ -21,5 +22,5 @@ This project has some limitations which are ignored due to the deadline of the p
 2.	There's no validation is done on the file uploaded.
 3.	There's no encryption performed on the cookies stored.
 4.	There's no manual delete option of the user records - drafts and booking history
-5.	The application is only tested on Google Chrome Version 67.0.3396.87 and not on any other browser.
+5.	The application is only tested on Google Chrome Version 73.0.3396.87 and not on any other browser.
 
